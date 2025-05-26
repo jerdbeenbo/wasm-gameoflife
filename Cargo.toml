@@ -1,0 +1,16 @@
+[package]
+name = "wasm-gameoflife"
+version = "0.1.0"
+authors = ["Jarred Jenkins <https://github.com/jerdbeenbo>"]
+description = "A falling sand particle SA simulation"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/jerdbeenbo/..."
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
+wasm-bindgen = "0.2"
